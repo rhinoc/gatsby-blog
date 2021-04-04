@@ -30,6 +30,7 @@
     "gatsby-remark-autolink-headers": "^3.2.0",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-copy-linked-files": "^3.1.0",
+    "gatsby-remark-code-buttons": "^2.0.7",
     "gatsby-remark-custom-blocks": "^3.2.0",
     "gatsby-remark-figure-caption": "^2.0.0",
     "gatsby-remark-images": "^4.1.1",
@@ -56,7 +57,6 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
-    "gatsby-remark-code-buttons": "^2.0.7",
     "prettier": "2.2.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -70,7 +70,8 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "build": "npm install & gatsby build",
+    "preinstall": "npm install",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
