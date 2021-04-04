@@ -35,7 +35,7 @@ const IndexTemplate = raw => {
           <PostItem key={post.fields.slug} title={post.frontmatter.title} url={post.fields.slug} description={post.frontmatter.description || post.excerpt} date={post.frontmatter.date} timeToRead={post.timeToRead} />
         ))}
       </section>
-      <Pagination pageContext={pageContext} />
+      <Pagination pageContext={pageContext} location={location}/>
     </Layout>
   );
 };
