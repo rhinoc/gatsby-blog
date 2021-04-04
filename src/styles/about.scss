@@ -1,0 +1,34 @@
+.about-wrapper {
+    .card {
+        padding: 2.25rem 3rem;
+        backdrop-filter: blur(.6rem);
+        
+        .title {
+            color: var(--color-heading);
+            font-family: var(--font-sans);
+            letter-spacing: -.03em;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    
+        .content {
+            font-family: var(--font-serif);
+            color: var(--color-text);
+            
+
+            p {
+                line-height: 1.5em;
+                margin-bottom: .5em;
+            }
+
+            a{
+                border-bottom: var(--border-link);
+                user-select: text;
+            }
+
+            a:hover {
+                border-bottom: var(--border-link-hover);
+            }
+        }
+    }
+}

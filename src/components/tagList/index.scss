@@ -1,0 +1,28 @@
+$font: var(--font-sans);
+$color: var(--color-text);
+$border: var(--border-tag) !important;
+$color_hover: var(--color-hover-bg);
+
+.taglist {
+    display: flex;
+    margin: 0;
+
+    &__item>a {
+        letter-spacing: -.03em;
+        font-weight: bold;
+        font-size: 0.8rem;
+        font-family: $font;
+        color: $color;
+        border-radius: 2rem;
+        padding: 0.3rem 1rem 0.35rem;
+        border: $border;
+    }
+
+    &__item>a:hover {
+        background: $color_hover
+    }
+
+    &__item:not(:last-of-type) {
+        margin-right: 0.5rem;
+    }
+}
