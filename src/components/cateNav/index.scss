@@ -47,26 +47,15 @@ $color_nav_sticky: var(--color-nav-bg);
 
 .category-list--sticky {
     z-index: 2;
-    max-width: none;
+    background-color: $color_nav_sticky;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     backdrop-filter: blur(.6rem);
     width: 100vw;
-    margin-left: -4.5rem;
-    background-color: $color_nav_sticky;
+    position: fixed;
+    left: 0;
+    top: 0;
 
     .category-list__item {
         border-bottom: none;
-    }
-}
-
-@media(max-width:400px){
-    .category-list--sticky {
-        margin-left: -1rem;
-    }
-}
-
-@media(max-width:800px){
-    .category-list--sticky {
-        margin-left: -1.5rem;
     }
 }
