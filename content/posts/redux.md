@@ -47,7 +47,7 @@ const state = {
 
 在React中，同级组件之间的通信非常麻烦，常规的解决办法是使用多个<ruby>中间件<rt>middleware</rt></ruby>进行消息传递，一个组件状态改变后还需要将这个状态传递到所有依赖此状态的其他组件。
 
-![-w500](https://pic.rhinoc.top/mweb/15963462054771.jpg)
+![](https://pic.rhinoc.top/mweb/15963462054771.jpg)
 
 Redux则给出了另一种解决方法，使用单一数据源Store来存储状态数据，所有的组件都可以读取Store或者通过Action修改Store。简而言之，通过Redux，我们可以将多个组件使用的状态拿出来，放入组件树之外的集中位置（顶层容器）。
 
@@ -75,7 +75,7 @@ const store = createStore(rootReducer);
 
 `rootReducer`是一个reducer，而reducer是一个函数，它接受当前state和一个action，返回新的state。
 
-![-w329](https://pic.rhinoc.top/mweb/15963494026489.jpg)
+![](https://pic.rhinoc.top/mweb/15963494026489.jpg)
 
 比如在本例中，`rootReducer`接受`state`后，根据`action.type`返回不同的`state`。
 

@@ -63,7 +63,7 @@ var twoSum = function (nums, target) {
     }
 }
 ```
-![-w458](https://pic.rhinoc.top/mweb/15650986359887.jpg)
+![](https://pic.rhinoc.top/mweb/15650986359887.jpg)
 
 更高阶解法：
 > 使用尾递归进行优化，不过性能不升反降？
@@ -79,7 +79,7 @@ var twoSum = function (nums, target, i = 0, map = {}) {
     }
 }
 ```
-![-w458](https://pic.rhinoc.top/mweb/15650990864454.jpg)
+![](https://pic.rhinoc.top/mweb/15650990864454.jpg)
 
 ## 7 整数反转
 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
@@ -139,7 +139,7 @@ var reverse = function (x) {
     return re
 };
 ```
-![-w458](https://pic.rhinoc.top/mweb/15651034499622.jpg)
+![](https://pic.rhinoc.top/mweb/15651034499622.jpg)
 
 ## 9 回文数
 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
@@ -425,7 +425,7 @@ var longestCommonPrefix = function(strs) {
     return re;
 };
 ```
-![-w458](https://pic.rhinoc.top/mweb/15651872232259.jpg)
+![](https://pic.rhinoc.top/mweb/15651872232259.jpg)
 
 
 ## 20 有效的括号
@@ -501,7 +501,7 @@ var isValid = function (s) {
     return true
 };
 ```
-![-w458](https://pic.rhinoc.top/mweb/15651933859184.jpg)
+![](https://pic.rhinoc.top/mweb/15651933859184.jpg)
 
 解三：
 > 换一种思路，可以边遍历边匹配。也就是遍历的时候遇到左括号存入数组，下次遇到的第一个右括号必须和数组中最后一个元素匹配，否则为无效字符串，匹配完成后从数组中删除此元素。若最终数组为空，表示括号已全部匹配完，字符串有效。
@@ -523,5 +523,5 @@ var isValid = function (s) {
     return !leftArr.length //防止全部为左括号
 };
 ```
-![-w458](https://pic.rhinoc.top/mweb/15651936967308.jpg)
+![](https://pic.rhinoc.top/mweb/15651936967308.jpg)
 

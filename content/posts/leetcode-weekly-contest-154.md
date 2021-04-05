@@ -309,7 +309,7 @@ var kConcatenationMaxSum = function (arr, k) {
 > 
 > 由于之前对深度优先搜索和广度优先搜索都只是耳闻，理解起代码来比较困难，所以特意绘制了思维导图方便理解。
 > 
-> ![dfs-0,0-@2x](https://pic.rhinoc.top/mweb/dfs(0,0)@2x.png)
+> ![](https://pic.rhinoc.top/mweb/dfs(0,0)@2x.png)
 
 ```js
 var criticalConnections = function (n, connections) {

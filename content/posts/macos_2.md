@@ -17,13 +17,13 @@ tags: ["swift"]
 
 在 Xcode 新建一个 macOS APP 工程，选择语言为 Swift，使用 Storyboard 构建 UI。
 
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.15.01@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.15.01@2x.png)
 
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.17.39@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.17.39@2x.png)
 
 这样，我们就得到一个初始的项目，如果运行这个项目，将打开一个没有内容的窗口。
 
-![@2x](https://pic.rhinoc.top/mweb/15799295921113.jpg)
+![](https://pic.rhinoc.top/mweb/15799295921113.jpg)
 
 在导航区可以看到项目中包括两个文件夹，一个是与项目名同名的文件夹，其下是构建程序的源代码，另一个`Products`存放编译后的应用，如果将编译后的应用拖到`Applications`文件夹就算安装好了。
 
@@ -40,7 +40,7 @@ tags: ["swift"]
 
 在[Iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)里找一个中意的图标，下载 18x18、36x36、54x54 三种尺寸。然后`Assets.xcassets`中新建一个 Image Set，更名为`StatusBarButtonImage`，再将下载好的三种尺寸图标分别拖入 1x、2x、3x。在 Attributes Inspector 中选择`Render As Template Image`以适应系统的黑暗模式。
 
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.56.11@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.56.11@2x.png)
 
 ### 在菜单栏创建图标
 
@@ -60,10 +60,10 @@ if let button = statusItem.button {
 
 运行后菜单栏就会显示一个黑色幽灵图标：
 
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.59.28@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.59.28@2x.png)
 
 暗黑模式下则是白色幽灵：
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.59.06@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2013.59.06@2x.png)
 
 ### 隐藏打开时的 Dock 栏图标和窗口
 
@@ -71,7 +71,7 @@ if let button = statusItem.button {
 
 剩下的就是干掉打开时显示的窗口了。凡是显示的东西，肯定和 UI 有关，凡是和 UI 有关，大半和`Main.storyboard`有关。打开`Main.storyboard`，可以看到里面有一个`Window Controller Scene`，将其删除。
 
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2014.10.39@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2014.10.39@2x.png)
 
 这时候编译运行，就能够得到一个只在菜单栏显示的图标了。
 
@@ -79,11 +79,11 @@ if let button = statusItem.button {
 
 新建一个 Cocoa Class，命名为`PopoverViewController`，它将用来控制 Popover 的逻辑。
 
-![@2x](https://pic.rhinoc.top/mweb/15799331542833.jpg)
+![](https://pic.rhinoc.top/mweb/15799331542833.jpg)
 
 接下来将视图和逻辑绑定。`Storyboard.swift`中已经有一个视图了，不过绑定的是`ViewController.swift`，只需要设置 Custom Class 和 Storyboard ID 为`PopoverViewController`，然后就会发现之前所有的`View Controller`都变成了`Popover View Controller`，现在`ViewController.swift`也可以删除了。
 
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2015.10.05@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2015.10.05@2x.png)
 
 回到`PopoverViewController.swift`，在末尾增加：
 
@@ -145,7 +145,7 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 
 编译运行后，点击菜单栏图标将出现一个 Popover，再次点击关闭。
 
-![@2x](https://pic.rhinoc.top/mweb/15799370862934.jpg)
+![](https://pic.rhinoc.top/mweb/15799370862934.jpg)
 
 ### 配置 Popover 失去焦点后隐藏
 
@@ -225,15 +225,15 @@ trans 作为一个翻译软件，将 Popover 设置为主界面，用来进行�
 
 我们先在 Storyboard 中创建一个 Menu，将其拖入 Application Scene。
 
-![@2x](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2015.30.34@2x.png)
+![](https://pic.rhinoc.top/mweb/CleanShot%202020-01-25%20at%2015.30.34@2x.png)
 
 然后将 Menu 与 AppDelegate.swift 建立联系，先打开 Assistant：
 
-![@2x](https://pic.rhinoc.top/mweb/15799377421802.jpg)
+![](https://pic.rhinoc.top/mweb/15799377421802.jpg)
 
 然后按住`control`键，将 Menu 拖入 AppDelegate 中插入一个 outlet，命名为 menu。
 
-![@2x](https://pic.rhinoc.top/mweb/15799379299363.jpg)
+![](https://pic.rhinoc.top/mweb/15799379299363.jpg)
 
 之前我们为`statusItem.button`赋以`togglePopover`的动作。现在我们在 class 内新建一个 Handler 来接管`togglePopover`。
 

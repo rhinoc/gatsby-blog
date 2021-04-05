@@ -47,7 +47,7 @@ xip -x ~/Downloads/Xcode_11.2.xip
 ## 上手 Xcode
 
 打开 Xcode 后，创建我们的第一个 macOS App 项目。
-![@2x](https://pic.rhinoc.top/mweb/15722485065746.jpg)
+![](https://pic.rhinoc.top/mweb/15722485065746.jpg)
 
 -   Product Name：应用的名称
 -   Team：选择你的 Apple 开发者账户，或者选 None
@@ -75,7 +75,7 @@ Storyboard 可以让你在一个地方管理所有用户界面，而 XIB 能让�
 
 导航区域的上方有 8 个选项卡，这里只谈谈最常用的三个：
 
-![@2x](https://pic.rhinoc.top/mweb/15722545653537.jpg)
+![](https://pic.rhinoc.top/mweb/15722545653537.jpg)
 
 1. Project：项目文件
 2. Search：全局搜索
@@ -107,7 +107,7 @@ Storyboard 可以让你在一个地方管理所有用户界面，而 XIB 能让�
 
 如果打开的是代码文件，那么审查区域应该只有 3 个选项卡：
 
-![@2x](https://pic.rhinoc.top/mweb/15722556419936.jpg)
+![](https://pic.rhinoc.top/mweb/15722556419936.jpg)
 
 1. File Inspector：文件审查器，显示当前文件的详细信息
 2. History Inspector：历史审查器，显示当前文件的历史变动
@@ -115,7 +115,7 @@ Storyboard 可以让你在一个地方管理所有用户界面，而 XIB 能让�
 
 如果打开的是视图文件，除了上面提到的三种选项卡，审查区域应该还有 6 个选项卡：
 
-![@2x](https://pic.rhinoc.top/mweb/15722557968010.jpg)
+![](https://pic.rhinoc.top/mweb/15722557968010.jpg)
 
 1. Identity Inspector：设置空间的 class
 2. Attributes Inspector：定义控件的属性

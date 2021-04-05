@@ -110,7 +110,7 @@ def genItem(url,img,name,disc):
     line.append('\t\t<div class="xe-widget xe-conversations box2 label-info" onclick="window.open(\'' + url + '\', \'_blank\')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="' + url +'">')
     line.append('\t\t\t<div class="xe-comment-entry">')
     line.append('\t\t\t\t<a class="xe-user-img">')
-    line.append('''\t\t\t\t\t![@2x](../assets/images/logos/''' + img + ''')''')
+    line.append('''\t\t\t\t\t![](../assets/images/logos/''' + img + ''')''')
     line.append('\t\t\t\t</a>')
     line.append('\t\t\t\t<div class="xe-comment">')
     line.append('''\t\t\t\t\t<a href="#" class="xe-user-name overflowClip_1">''')

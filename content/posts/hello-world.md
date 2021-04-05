@@ -120,16 +120,16 @@ console.log('you can see filename in this block :)');
 ![](https://fakeimg.pl/400x100/?text=online%20image%20without%20caption)
 
 ![](https://fakeimg.pl/400x100/?text=online%20image%20without%20caption)
-<!-- ![](../media/lw.png) -->
+![](../media/lw.png)
 
 ![alt](https://fakeimg.pl/400x100/?text=online%20image%20with%20caption "title")
 ![alt](https://fakeimg.pl/400x100/?text=online%20image%20with%20caption "title")
 
 ![alt](https://fakeimg.pl/400x100/?text=online%20image%20with%20caption%201 "title")
-<!-- ![alt](../media/lc.png "title")
+![alt](../media/lc.png "title")
 
 ![alt](../media/lc.png "title")
-![alt](../media/lc.png "title") -->
+![alt](../media/lc.png "title")
 
 See links below for details:
 * [gatsby-remark-figure-caption](https://www.gatsbyjs.com/plugins/gatsby-remark-figure-caption/)

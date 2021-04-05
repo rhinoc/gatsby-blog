@@ -39,11 +39,11 @@ tags: ["mac-flow"]
 | [ClashXR](https://github.com/WhoJave/clashX/releases) | SS/SSR/Vmess |
 
 如果只考虑协议的支持情况，其实就已经高下立判了。不过目前 ClashXR 的知名度还不是很高，我也是乱翻 Github 才知道不仅有人用 Clash 核做了 GUI 版本的 ClashX，还有人 fork 了 ClashX 换上了另一个人 fork Clash 做的 ClashR 的核。画图来表示一下关系，其中 Clash 和 ClashR 都是内核，而 ClashX 和 ClashXR 是 GUI 应用：
-![@2x](https://pic.rhinoc.top/mweb/15830741698612.jpg)
+![](https://pic.rhinoc.top/mweb/15830741698612.jpg)
 
 除了知名度不高以外，ClashXR 还有一些不只是有意还是无意的 bug，比如在关于页面显示的连接还是 Clash 和 ClashX 的，以及检查更新得到是 ClashX 的更新包。还硬要说有什么缺点的话，就是更新慢了。
 
-![@2x](https://pic.rhinoc.top/mweb/15830745239304.jpg)
+![](https://pic.rhinoc.top/mweb/15830745239304.jpg)
 
 缺点说完了，剩下的就都是优点了。由于站在巨人 ClashX 的肩膀上，ClashXR 有着易用且好看的 UI，由于站在另一个巨人 ClashR 的肩膀上，ClashXR 有着丰富全面的协议兼容性。
 
@@ -57,7 +57,7 @@ tags: ["mac-flow"]
 
 下载安装 Proxifier 后，在设置中可以设置规则，保持 Proxifier 开启状态就行了。
 
-![@2x](https://pic.rhinoc.top/mweb/15830760144511.jpg)
+![](https://pic.rhinoc.top/mweb/15830760144511.jpg)
 
 需要注意的是，`本机`中也包括了 ClashXR 的出流量，为了不形成`ClashXR<->Proxifier`的死循环，需要在 Rules 里添加 ClashXR 直连，不过这个一般 Proxifier 默认会生成，无需用户操心。
 
