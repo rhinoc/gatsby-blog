@@ -3,29 +3,30 @@ $font_color: var(--color-heading);
 $color_nav_sticky: var(--color-nav-bg);
 
 .category-list {
-    width: 100%;
-    border-bottom: $border;
     display: flex;
     align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
-    position: sticky;
-    top: 0;
+
+    border-bottom: $border;
+    width: 100%;
 
     transition: background-color 500ms ease-out;
 
     &__item {
+        display: inline-block;
+        opacity: 0.7;
+
+        height: 4rem;
         padding: 1.5rem 1.25rem;
-        text-align: center;
+
         font-size: 1rem;
-        line-height: 1rem;
         font-weight: 400;
         letter-spacing: 1px;
+        text-align: center;
         text-transform: uppercase;
         color: $font_color;
-        opacity: 0.7;
-        display: inline-block;
 
         &:hover {
             border-bottom: 1px solid $font_color;
@@ -40,22 +41,20 @@ $color_nav_sticky: var(--color-nav-bg);
     }
 
     &__item--active {
-        border-bottom: 1px solid $font_color !important;
         opacity: 1;
+        border-bottom: 1px solid $font_color !important;
     }
 }
 
 .category-list--sticky {
-    z-index: 2;
-    background-color: $color_nav_sticky;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-    backdrop-filter: blur(.6rem);
-    width: 100vw;
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 2;
 
-    .category-list__item {
-        border-bottom: none;
-    }
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    width: 100vw;
+
+    background-color: $color_nav_sticky;
+    backdrop-filter: blur(.6rem);
 }

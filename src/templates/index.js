@@ -6,6 +6,7 @@ import Seo from '../components/seo';
 import CateNav from '../components/cateNav';
 import PostItem from '../components/postItem';
 import Pagination from '../components/pagination/';
+import '../styles/main.scss';
 
 const IndexTemplate = raw => {
   const [stickyNav, setStickyNav] = useState(false);

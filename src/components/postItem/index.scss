@@ -1,27 +1,28 @@
-$font_heading: var(--font-heading);
+$font_heading: var(--font-sans);
 $color_heading: var(--color-heading);
 $color_description: var(--color-description);
 
 .post-item {
     display: block;
     padding: 20px;
-    overflow: auto;
 
     &__title {
-        font-family: $font_heading;
-        font-size: 1.75rem;
-        font-weight: bold;
-        color: $color_heading;
-        letter-spacing: 0.5px;
-        line-height: 2.3rem;
         margin-bottom: 1rem;
+
+        font-size: 1.75rem;
+        font-family: $font_heading;
+        font-weight: bold;
+        line-height: 2.3rem;
+        letter-spacing: 0.5px;
+        color: $color_heading;
     }
 
     &__desc {
-        font-size: 14px;
-        line-height: 22px;
-        font-weight: 300;
         padding-bottom: 30px;
+
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
         color: $color_description;
 
         p {
@@ -32,31 +33,26 @@ $color_description: var(--color-description);
     &__info {
         display: flex;
         align-items: center;
-        float: left;
-        color: $color_heading;
-        margin: 3px 0px 0px 7px;
+        opacity: 0.5;
+
         font-size: 11px;
         font-weight: 200;
-        opacity: 0.5;
         line-height: 14px;
+        color: $color_heading;
 
         >:not(:last-of-type) {
             margin-right: 1rem;
         }
 
-        >.date {
-            display: flex;
-            align-items: center;
-        }
-
+        >.date,
         >.read-time {
             display: flex;
             align-items: center;
-        }
 
-        .icon {
-            height: 1rem;
-            margin-right: 0.3rem;
+            .icon {
+                height: 1rem;
+                margin-right: 0.3rem;
+            }
         }
     }
 

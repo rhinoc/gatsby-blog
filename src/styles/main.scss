@@ -5,12 +5,19 @@
     /* WIDTH */
     --max-width: 1200px;
     /* FONT */
-    --font-sans: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, Hiragino Sans GB, Microsoft Yahei, Arial, sans-serif;
+    --font-sans: -apple-system,
+    BlinkMacSystemFont,
+    PingFang-SC-Regular,
+    Hiragino Sans GB,
+    Arial,
+    Microsoft Yahei,
+    sans-serif;
     --font-serif: "IBM Plex Sans", serif;
     --font-mono: "IBM 3270", monospace;
     --font-code: "Jetbrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-name: "Suez One", sans-serif;
-    --font-heading: 'Poppins', sans-serif;
+    --font-name: "Suez One",
+    Tahoma,
+    sans-serif;
     /* SIZE */
     --font-size: 16px;
     --size-logo: 3rem;
@@ -68,39 +75,34 @@ p,pre {
     margin-inline-end: 0;
 }
 
-/* HTML elements */
 html {
-    color: var(--color-text);
     background: var(--color-bg);
     font-family: var(--font-sans);
     font-size: var(--font-size);
-    scrollbar-face-color: var(--color-gray);
-    scrollbar-base-color: var(--color-gray);
-    scrollbar-3dlight-color: var(--color-gray);
-    scrollbar-highlight-color: var(--color-gray);
-    scrollbar-track-color: var(--color-bg);
-    scrollbar-arrow-color: var(--color-bg);
-    scrollbar-shadow-color: var(--color-gray);
+    color: var(--color-text);
     ::-webkit-scrollbar { width: 8px; height: 5px;}
-    ::-webkit-scrollbar-button {  background: var(--gradient-theme); }
-    ::-webkit-scrollbar-track {  background: var(--color-gray);}
+    ::-webkit-scrollbar-track { background: var(--gradient-glass); }
     ::-webkit-scrollbar-track-piece { background: var(--gradient-glass);}
+    ::-webkit-scrollbar-button {  background: var(--gradient-theme); }
     ::-webkit-scrollbar-thumb { height: 3rem; background: var(--gradient-theme); border-radius: 8px;}
-    ::-webkit-scrollbar-corner { background: var(--color-gray);}
-    ::-webkit-resizer { background: var(--color-gray);}
+    ::-webkit-scrollbar-corner { background: var(--gradient-glass);}
+    ::-webkit-resizer { background: var(--gradient-theme); }
 }
 
 body {
+    overflow-x: hidden;
+
+    margin: 0;
+    padding: 0;
+
     background: var(--bg);
     background-repeat: no-repeat, no-repeat;
     background-position: top center, top center;
     background-size: 100vh, cover;
     background-attachment: scroll, fixed;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
 
+/* HTML elements */
 // Paragraph
 p {
     line-height: 1.5em;
@@ -121,29 +123,32 @@ audio, video {
 // Table
 table {
     display: inline-block;
-    width: 100%;
     overflow: auto;
-    background: 0 0;
+    scroll-behavior: smooth;
+
     border-collapse: collapse;
     border-spacing: 0;
+    width: 100%;
+
     text-align: left;
 
     th {
-        padding: 6px 13px;
         border: var(--border-table);
+        padding: 6px 13px;
+
         font-weight: bold;
         line-height: 1.5;
         word-wrap: break-word;
     }
 
     td {
-        padding: 6px 13px;
         border: var(--border-table);
+        padding: 6px 13px;
     }
 
     tr {
-        background: var(--color-table-bg);
         border-top: var(--border-table);
+        background: var(--color-table-bg);
     }
 
     tr:nth-child(2n) {
@@ -163,9 +168,13 @@ h3,
 h4,
 h5,
 h6 {
+    position: relative;
     margin: 0;
     margin-bottom: .8em;
-    position: relative;
+
+    code {
+        font-size: .9em;
+    }
 }
 
 h1:not(:first-child),
@@ -180,56 +189,33 @@ h6:not(:first-child) {
 h1 {
     font-size: 1.7rem;
     line-height: 1.1;
-
-    code {
-        font-size: 1.6rem;
-    }
 }
 
 h2 {
     font-size: 1.6rem;
-
-    code {
-        font-size: 1.5rem;
-    }
 }
 
 h3 {
     font-size: 1.5rem;
-
-    code {
-        font-size: 1.4rem;
-    }
 }
 
 h4 {
     font-size: 1.3rem;
-
-    code {
-        font-size: 1.2rem;
-    }
 }
 
 h5 {
     font-size: 1.2rem;
-
-    code {
-        font-size: 1.1rem;
-    }
 }
 
 h6 {
     font-size: 1.1rem;
-
-    code {
-        font-size: 1rem;
-    }
 }
 
+/* Global Classes */
 .pseudo-fa::before {
+    position: absolute;
     display: block;
     font-family: "Font Awesome 5 Free";
-    position: absolute;
     font-weight: 900;
     font-style: normal;
     font-variant: normal;
@@ -238,22 +224,17 @@ h6 {
 
 }
 
-/* Global Classes */
 .glass {
-    background: var(--gradient-glass);
+    box-shadow: var(--shadow-glass);
     border: var(--border-glass);
     border-radius: 8px;
-    box-shadow: var(--shadow-glass);
+    background: var(--gradient-glass);
 }
 
 .purea {
     color: currentColor;
     text-decoration: none;
     user-select: none;
-}
-
-.pureli {
-    list-style: none;
 }
 
 .accerator {
@@ -267,14 +248,13 @@ h6 {
 .container {
     max-width: var(--max-width);
     padding: 0 4.5rem; // make room for sidebar tool
-    margin-left: auto; // make it center
+    margin-left: auto;
     margin-right: auto;
 }
 
 .container--fixed {
     height: 100vh;
-    overflow-y: hidden;
-    padding-right: 5rem; /* Avoid width reflow */
+    overflow-y: hidden
 }
 
 @media(max-width:400px){
@@ -292,10 +272,10 @@ h6 {
 .hide {
     display: block !important;
     opacity: 0 !important;
-    padding: 0 !important;
     margin: 0 !important;
     width: 0 !important;
     height: 0 !important;
+    padding: 0 !important;
 
     * {
         display: block !important;
@@ -310,7 +290,6 @@ h6 {
 
 .container {
     .blog-header {
-        position: static;
         padding: 2rem 0;
         display: flex;
         align-items: center;
@@ -323,9 +302,9 @@ h6 {
             }
 
             &__icon {
-                transition: ease-in-out 250ms;
                 height: var(--size-logo);
                 width: var(--size-logo);
+                transition: ease-in-out 250ms;
 
                 &:hover {
                     transform: rotate(195.5deg)
@@ -342,8 +321,8 @@ h6 {
             color: var(--color-heading);
 
             .search-icon {
-                height: 1em;
                 opacity: 0.6;
+                height: 1em;
                 cursor: pointer;
 
                 &:hover{
@@ -352,9 +331,9 @@ h6 {
             }
 
             a {
+                opacity: 0.6;
                 padding-top: 9px;
                 padding-bottom: 9px;
-                opacity: 0.6;
                 font-size: 12px;
                 line-height: 20px;
                 font-weight: 500;
@@ -372,19 +351,23 @@ h6 {
 
         .blog-name {
             width: 100%;
+            overflow-y: hidden;
+            overflow-x: auto;
+
             margin-left: auto;
             margin-right: auto;
             padding-top: 7.5rem;
             padding-bottom: 2.5rem;
+            padding-right: 0;
+
             font-family: var(--font-name);
-            color: var(--color-heading);
+            font-display: swap;
             font-weight: bold;
             font-size: 9rem;
             letter-spacing: -.3rem;
-            padding-right: 0;
-            overflow-y: hidden;
-            overflow-x: auto;
+            color: var(--color-heading);
             white-space: nowrap;
+
             user-select: none;
         }
 
@@ -413,16 +396,18 @@ h6 {
 
     .blog-footer {
         display: flex;
-        font-size: .75rem;
-        color: var(--color-gray);
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        margin-top: 5rem;
+        border-top: var(--border-footer);
         padding-top: 1rem;
         padding-bottom: 2rem;
-        margin-top: 5rem;
+
+        font-size: .75rem;
         line-height: 2em;
-        border-top: var(--border-footer);
+        color: var(--color-gray);
 
         a:hover {
             color: var(--color-text);

@@ -7,9 +7,10 @@ $color_bg_hover: var(--color-hover-bg);
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: min-content;
-    width: 100%;
-    gap: 1rem;
     justify-content: center;
+    gap: 1rem;
+    
+    width: 100%;
     padding: 2rem 0;
 
     &__icon--disabled {
@@ -21,11 +22,11 @@ $color_bg_hover: var(--color-hover-bg);
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 50%;
+        box-sizing: content-box;
         height: 1.2rem;
         width: 1.2rem;
         padding: .4rem;
-        border-radius: 50%;
-        box-sizing: content-box;
         transition: 100ms;
 
         &:hover {
@@ -35,8 +36,8 @@ $color_bg_hover: var(--color-hover-bg);
 
     .item-wrapper--active {
         background: $color_bg_active;
-        color: $color_active;
         font-weight: bold;
+        color: $color_active;
     }
 
     .divider {

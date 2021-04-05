@@ -4,21 +4,20 @@
         backdrop-filter: blur(.6rem);
         
         .title {
-            color: var(--color-heading);
-            font-family: var(--font-sans);
-            letter-spacing: -.03em;
             font-size: 2rem;
+            font-family: var(--font-sans);
             font-weight: bold;
+            letter-spacing: -.03em;
+            color: var(--color-heading);
         }
     
         .content {
             font-family: var(--font-serif);
             color: var(--color-text);
             
-
             p {
-                line-height: 1.5em;
                 margin-bottom: .5em;
+                line-height: 1.5em;
             }
 
             a{

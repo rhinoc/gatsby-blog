@@ -7,19 +7,21 @@
     }
 
     .tag {
-        padding: .2rem .8rem;
-        width: fit-content;
         border-radius: 1rem;
+        width: fit-content;
+        padding: .2rem .8rem;
+
+        background: var(--gradient-theme);
+
         font-size: 3rem;
         font-weight: bold;
-        background: var(--gradient-theme);
         color: var(--color-bg);
     }
 
     .title {
         font-size: 5rem;
-        color: var(--color-heading);
         font-weight: bold;
+        color: var(--color-heading);
     }
 
     .desc {

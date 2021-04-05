@@ -7,9 +7,10 @@ import Seo from '../components/seo';
 import TagList from '../components/tagList/';
 import { ChevronUp as BackTopIcon } from '@styled-icons/boxicons-solid';
 import { StaticImage } from 'gatsby-plugin-image';
-import 'katex/dist/katex.min.css';
-import '../styles/tocbot.scss';
 import '../styles/post.scss';
+import '../styles/tocbot.scss';
+import '../styles/prism.scss';
+import 'katex/dist/katex.min.css';
 
 const Avatar = () => (
   <Link className="purea avatar-wrapper" to="/about">

@@ -8,14 +8,14 @@ $color_hover: var(--color-hover-bg);
     margin: 0;
 
     &__item>a {
-        letter-spacing: -.03em;
-        font-weight: bold;
-        font-size: 0.8rem;
-        font-family: $font;
-        color: $color;
+        border: $border;
         border-radius: 2rem;
         padding: 0.3rem 1rem 0.35rem;
-        border: $border;
+        font-size: 0.8rem;
+        font-family: $font;
+        font-weight: bold;
+        letter-spacing: -.03em;
+        color: $color;
     }
 
     &__item>a:hover {
