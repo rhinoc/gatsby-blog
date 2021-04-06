@@ -16,13 +16,11 @@ $color_black: rgba(0,0,0,1);
         position: absolute;
         top: $padding_copy;
         right: $padding_copy;
-        display: flex;
-        align-items: center;
         opacity: var(--opacity);
         
         font-family: var(--font-code);
         font-size: 0.75rem;
-        color: var(--color-gray);
+        color: #fff;
         
         user-select: none;
 
@@ -244,9 +242,10 @@ pre[class*="language-"] {
 :not(pre)>code[class*="language-"] {
     margin: 0;
     border-radius: 3px;
-    padding: .2em .4em;    
+    padding: .2em;    
     background-color: var(--color-hover-bg);
-    font-size: 85%;
+    font-size: .85rem;
+    line-height: 1rem;
     color: var(--color-theme);
 }
 

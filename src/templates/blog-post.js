@@ -74,12 +74,11 @@ const BlogPostTemplate = ({ data, location }) => {
   }, [data, location]);
 
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
   const authorName = data.site.siteMetadata.author.name;
   const { previous, next } = data;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} projectUrl={data.site.siteMetadata.projectUrl}>
       <Seo title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
       <div className="post">
         <header className="post__header">
@@ -130,10 +129,10 @@ export const pageQuery = graphql`
   query BlogPostBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
     site {
       siteMetadata {
-        title
         author {
           name
         }
+        projectUrl
       }
     }
     markdownRemark(id: { eq: $id }) {

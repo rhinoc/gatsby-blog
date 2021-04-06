@@ -4,7 +4,7 @@ import { Timer as TimerIcon, Calendar as DateIcon } from '@styled-icons/remix-fi
 import './index.scss';
 
 const PostItem = ({ title, url, description, date, timeToRead }) => (
-  <Link to={url} className="purea post-item glass">
+  <Link to={url} className="accerator purea post-item glass">
     <header className="post-item__title">{title}</header>
     <section className="post-item__desc">
       <p

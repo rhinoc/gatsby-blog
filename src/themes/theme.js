@@ -15,6 +15,7 @@ export const lightTheme = {
   color_danger_bg: 'rgba(255, 224, 102, 0.45)',
   color_table_bg: 'rgba(255,255,255,0.1)',
   color_table_bg_secondary: 'rgba(255, 255, 255, 0.4)',
+  color_link: '#b9cdfb',
 
   gradient_theme: 'linear-gradient(-5deg, rgba(14, 16, 64, 1), rgba(14, 16, 64, 0.5))',
   gradient_glass: 'radial-gradient(100% 216.12% at 1.81% 0%, rgba(248, 248, 248, 0.3) 0%, rgba(248, 248, 248, 0.1) 100%)',
@@ -24,8 +25,6 @@ export const lightTheme = {
   border_cate: '1px solid rgb(139, 148, 158, 0.2)',
   border_tag: '2px solid rgba(40, 36, 47, 0.4)',
   border_table: '1px solid #c6cbd1',
-  border_link: '3px solid #b9cdfb',
-  border_link_hover: '3px solid #96b4f9',
 
   bg: 'var(--bg-light)',
   box_shadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px',
@@ -48,6 +47,7 @@ export const darkTheme = {
   color_danger_bg: 'rgba(255, 224, 102, 0.45)',
   color_table_bg: 'rgba(255, 255, 255, 0.1)',
   color_table_bg_secondary: 'rgba(255, 255, 255, 0.2)',
+  color_link: '#3d517f',
 
   gradient_theme: 'linear-gradient(5deg, rgba(226, 225, 255, 1), rgba(156, 154, 237, 0.5))',
   gradient_glass: 'radial-gradient(100% 216.12% at 1.81% 0%, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%)',
@@ -57,8 +57,6 @@ export const darkTheme = {
   border_glass: '1px solid rgba(255, 255, 255, 0.1)',
   border_table: '1px solid rgba(255, 255, 255, 0.2)',
   border_footer: '1px solid rgba(255, 255, 255, 0.1)',
-  border_link: '3px solid #3d517f',
-  border_link_hover: '#b9cdfb',
 
   bg: 'var(--bg-dark)',
   box_shadow: 'none',

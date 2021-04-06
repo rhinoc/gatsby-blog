@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: `Dicerorhinus`,
+    title: `OuttaScope`,
     author: {
       name: `rhinoc`,
       mail: `rhinoc@outlook.com`,
@@ -136,7 +136,7 @@ module.exports = {
         apiKey: process.env.POSTHOG_API_KEY,
         appHost: process.env.POSTHOG_HOST,
         head: true,
-        isEnabledDevMode: true
+        isEnabledDevMode: false
       },
     },
     `gatsby-plugin-image`,

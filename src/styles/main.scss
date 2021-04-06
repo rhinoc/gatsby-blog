@@ -5,17 +5,11 @@
     /* WIDTH */
     --max-width: 1200px;
     /* FONT */
-    --font-sans: -apple-system,
-    BlinkMacSystemFont,
-    PingFang-SC-Regular,
-    Hiragino Sans GB,
-    Arial,
-    Microsoft Yahei,
-    sans-serif;
+    --font-sans: -apple-system, BlinkMacSystemFont, PingFang-SC-Regular, Hiragino Sans GB, Arial, Microsoft Yahei, sans-serif;
     --font-serif: "IBM Plex Sans", serif;
     --font-mono: "IBM 3270", monospace;
     --font-code: "Jetbrains Mono", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-name: "Suez One",
+    --font-name: "Poppins", sans-serif,
     Tahoma,
     sans-serif;
     /* SIZE */
@@ -100,6 +94,24 @@ body {
     background-position: top center, top center;
     background-size: 100vh, cover;
     background-attachment: scroll, fixed;
+}
+
+@media (max-aspect-ratio: 2/1) {
+    body {
+        background-size: 100vh, cover;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    body {
+        background-size: 75vh, cover;
+    }
+}
+
+@media (max-aspect-ratio: 1/2) {
+    body {
+        background-size: 60vh, cover;
+    }
 }
 
 /* HTML elements */
@@ -361,7 +373,6 @@ h6 {
             padding-right: 0;
 
             font-family: var(--font-name);
-            font-display: swap;
             font-weight: bold;
             font-size: 9rem;
             letter-spacing: -.3rem;

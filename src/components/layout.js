@@ -58,7 +58,7 @@ const Layout = ({ location, children, icp, projectUrl, className='' }) => {
               <CreativeCommonsBy />
             </a>
             <aside>
-              Except where otherwise noted, content on this site is licensed under a{' '}
+              Except where <Link className="purea" to="/posts/gatsby/#credits" alt="credits">otherwise noted</Link>, content on this site is licensed under a{' '}
               <a className="purea" href="https://creativecommons.org/licenses/by/4.0/" rel="license">
                 Creative Commons Attribution 4.0 International license
               </a>

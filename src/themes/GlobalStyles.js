@@ -9,9 +9,9 @@ export const GlobalStyles = createGlobalStyle`
 
     --color-theme: ${({ theme }) => theme.color_theme};
     --color-gray: ${({ theme }) => theme.color_gray}; 
-    --color-nav-bg: ${({theme})=>theme.color_nav_bg};
+    --color-nav-bg: ${({ theme }) => theme.color_nav_bg};
     --color-hover-bg: ${({ theme }) => theme.color_hover_bg};
-    --color-description: ${({theme}) => theme.color_description};
+    --color-description: ${({ theme }) => theme.color_description};
 
     --color-info: ${({ theme }) => theme.color_info};
     --color-info-bg: ${({ theme }) => theme.color_info_bg};
@@ -19,6 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     --color-danger-bg: ${({ theme }) => theme.color_danger_bg};
     --color-table-bg:${({ theme }) => theme.color_table_bg};
     --color-table-bg-secondary:${({ theme }) => theme.color_table_bg_secondary};
+    --color-link: ${({ theme }) => theme.color_link};
 
     --gradient-theme: ${({ theme }) => theme.gradient_theme};
     --gradient-glass: ${({ theme }) => theme.gradient_glass};
@@ -28,8 +29,6 @@ export const GlobalStyles = createGlobalStyle`
     --border-cate: ${({ theme }) => theme.border_cate};
     --border-tag: ${({ theme }) => theme.border_tag};
     --border-table: ${({ theme }) => theme.border_table};
-    --border-link:${({ theme }) => theme.border_link};
-    --border-link-hover:${({ theme }) => theme.border_link_hover};
 
     --bg ${({ theme }) => theme.bg};
     --box-shadow: ${({ theme }) => theme.box_shadow};
