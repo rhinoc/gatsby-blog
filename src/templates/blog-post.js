@@ -14,7 +14,7 @@ import 'katex/dist/katex.min.css';
 
 const Avatar = () => (
   <Link className="purea avatar-wrapper" to="/about">
-    <StaticImage className="avatar" src="../images/memoji.png" alt="avatar image" quality={100} placeholder="blurred"/>
+    <StaticImage className="avatar" src="../images/memoji.png" alt="avatar" quality={100} placeholder="blurred"/>
   </Link>
 );
 

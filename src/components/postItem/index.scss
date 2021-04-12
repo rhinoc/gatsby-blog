@@ -5,7 +5,6 @@ $color_description: var(--color-description);
 .post-item {
     display: block;
     padding: 20px;
-    backdrop-filter: blur(.6rem);
 
     &__title {
         margin-bottom: 1rem;

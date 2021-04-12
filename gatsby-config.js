@@ -9,7 +9,6 @@ module.exports = {
       summary: `Supposed to be a dev blog, but don't be suprised if you see something else.`,
     },
     description: `I think, therefore I am.`,
-    siteUrl: `https://blog.rhinoc.top/`,
     projectUrl: `https://github.com/rhinoc`,
     icp: `粤ICP备18112604号-1`,
     nav: ['frontend', 'cs', 'embeded', 'etc'],

@@ -12,7 +12,7 @@ const AboutPage = raw => {
     <Layout location={location} icp={data.site.siteMetadata.icp} projectUrl={data.site.siteMetadata.projectUrl}>
       <Seo title="About" />
       <div className="about-wrapper">
-        <StaticImage className="memoji" src="../images/memoji_bg.png" quality={100} placeholder="tracedSVG"/>
+        <StaticImage className="memoji" src="../images/memoji_bg.png" quality={100} placeholder="tracedSVG" alt="memoji"/>
         <div className="accerator glass card">
           <h2 className="title">About Me</h2>
           <div className="content">
