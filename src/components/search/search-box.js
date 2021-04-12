@@ -12,7 +12,7 @@ export default connectSearchBox(({ show, refine, currentRefinement }) => {
   return (
       <form className='search-box'>
         <SearchIcon className="icon"/>
-        <input placeholder='Search...' className='search-input' type="text" onChange={e => refine(e.target.value)} value={currentRefinement} ref={inputRef}></input>
+        <input placeholder='Search by algolia' className='search-input' type="text" onChange={e => refine(e.target.value)} value={currentRefinement} ref={inputRef}></input>
       </form>
   );
 });
