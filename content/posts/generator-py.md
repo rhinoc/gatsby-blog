@@ -6,15 +6,15 @@ tags: ["python"]
 
 ---
 
-> 之前在 Gayhub 上 fork 了一个静态响应式导航[WebStack.cc](https://github.com/WebStackPage/WebStackPage.github.io)做了一个自己的网址导航「[造作家](http://index.rhinoc.top)」，具体的改造过程和未来的 Todo List 也许以后会单独写一篇博文。这篇博文只讲讲我是怎么用 Python 实现 HTML 的自动生成的。
+> 之前在 Gayhub 上 fork 了一个静态响应式导航[WebStack.cc](https://github.com/WebStackPage/WebStackPage.github.io)做了一个自己的网址导航「[造作家](https://index.rhinoc.top)」，具体的改造过程和未来的 Todo List 也许以后会单独写一篇博文。这篇博文只讲讲我是怎么用 Python 实现 HTML 的自动生成的。
 
 ## 分析 HTML 文件
 
 因为是导航网站，所以网页内容除了外部的框架就是大面积的相同元素的重复。可以看看在 Atom 编辑器里面`index.html`的样子，右侧的 minimap 可以看出代码结构的大面积重复。  
-![](http://pic.rhinoc.top/15496179113635.jpg)
+![](https://pic.rhinoc.top/15496179113635.jpg)
 
 有关`index.html`文件的结构如下：  
-![](http://pic.rhinoc.top/15496206158776.jpg)  
+![](https://pic.rhinoc.top/15496206158776.jpg)  
 其中有红色 flag🚩 的是每次在导航中增加条目时可能要修改的部分。那么思路就很明确了：Python 生成菜单部分（Part-A）和网站内容部分（Part-B），而不需要改变的内容分为`header`、`mid`、`footer`三部分保存在文档中，经由 Python 程序读取。最后程序将`header`-`Part-A`-`mid`-`Part-B`-`footer`拼接，生成最终的`index.html`。
 
 ## 确定 JSON 文件的结构
@@ -24,7 +24,7 @@ tags: ["python"]
 ### data.json
 
 添加一个网站条目，需要包括它的分组类别、标题、描述、链接以及图标。  
-![](http://pic.rhinoc.top/15496225628946.jpg)  
+![](https://pic.rhinoc.top/15496225628946.jpg)  
 那么`data.json`文件的结构就可以设置为：
 
 ```json
@@ -41,7 +41,7 @@ tags: ["python"]
 ### menu.json
 
 支持最多两级目录，其中一级目录需要设置 icon，二级目录仅以文字展示：  
-![](http://pic.rhinoc.top/15496231285648.jpg)  
+![](https://pic.rhinoc.top/15496231285648.jpg)  
 所以，设置`menu.json`为：
 
 ```json

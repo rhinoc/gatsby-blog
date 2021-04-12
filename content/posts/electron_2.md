@@ -10,7 +10,7 @@ tags: ["electron"]
 
 > 本文参考了@摘星的[用 Electron 打造 Win/Mac 应用，从「代码」到可下载的「安装包」，可能比你想得麻烦一点](https://webfe.kujiale.com/build-electron-app-gulp-workflow/)，摘星在他的文章中构建了一种通过`gulp`实现的自动化打包环节，为了避免重复造轮子，在下文中我只以macOS平台为例，大致过一遍各个环节的非自动化实现。
 
-在[上一篇文章](http://rhinoc.top/post/electron_1)中，我们做了一个简单的「Hello, World!」应用，但是要启动这个应用，还需要`npm start`，更别提要执行这个命令前要输入的那么多安装指令了。
+在[上一篇文章](https://rhinoc.top/post/electron_1)中，我们做了一个简单的「Hello, World!」应用，但是要启动这个应用，还需要`npm start`，更别提要执行这个命令前要输入的那么多安装指令了。
 
 一句话，一个成熟的应用一定得有个安装包。
 

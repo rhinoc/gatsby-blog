@@ -136,7 +136,7 @@ App：
 写作批改网站：
 * [【付费】雅思哥](https://study.ieltsbro.com/writing)（买分手服务送了一次批改机会）
 * [【免费】微软小英](https://app.mtutor.engkoo.com/englishwriting/)
-* [【免费】批改网](http://www.pigai.org/)
+* [【免费】批改网](https://www.pigai.org/)
 
 公众号：
 * Predict Daily

@@ -16,7 +16,7 @@ tags: ["hexo","blog"]
 ## 博文添加版权声明
 
 ### 效果图
-![](http://pic.rhinoc.top/15497710761152.jpg)
+![](https://pic.rhinoc.top/15497710761152.jpg)
 
 ### layout
 这里需要新建一个`.ejs`文件。我将它命名为`copyright.ejs`并放置在`fexo/layout/_partial/`下，文件内容为：
@@ -75,7 +75,7 @@ fexo已经原生支持了Gitalk，但是只是简单地开启了这个评论功�
 
 ### 效果图
 
-![](http://pic.rhinoc.top/15497717354181.jpg)
+![](https://pic.rhinoc.top/15497717354181.jpg)
 
 ### CSS
 
@@ -108,7 +108,7 @@ Gitalk的样式是在线获取的，所以在CSS中需要加上`!important`才�
 
 ### 效果图
 
-![](http://pic.rhinoc.top/15497729082670.jpg)
+![](https://pic.rhinoc.top/15497729082670.jpg)
 
 ### layout
 

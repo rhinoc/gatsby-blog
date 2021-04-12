@@ -68,7 +68,7 @@ const Layout = ({ location, children, icp, projectUrl, className='' }) => {
           <div className="copyright">© 2021 — Designed & developed by rhinoc</div>
           <div className="icp">
             互联网ICP备案：
-            <a className="purea" target="_blank" rel="noreferrer" href="http://www.miitbeian.gov.cn/" nofollow="">
+            <a className="purea" target="_blank" rel="noreferrer" href="https://www.miitbeian.gov.cn/" nofollow="">
               {icp}
             </a>
           </div>

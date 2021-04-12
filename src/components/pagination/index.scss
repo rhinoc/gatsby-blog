@@ -29,6 +29,11 @@ $color_bg_hover: var(--color-hover-bg);
         padding: .4rem;
         transition: 100ms;
 
+        svg {
+            height: 100%;
+            width: 100%;
+        }
+
         &:hover {
             background-color: $color_bg_hover;
         }

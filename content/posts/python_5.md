@@ -57,11 +57,11 @@ tags: ["python"]
 import webbrowser, requests, sys, bs4, pyperclip
 
 if len(sys.argv) < 2:
-    url = 'http://www.baidu.com/s?ie=utf-8&wd='+' '.join(pyperclip.paste())
+    url = 'https://www.baidu.com/s?ie=utf-8&wd='+' '.join(pyperclip.paste())
 else:
-    url = 'http://www.baidu.com/s?ie=utf-8&wd='+' '.join(sys.argv[1:])
+    url = 'https://www.baidu.com/s?ie=utf-8&wd='+' '.join(sys.argv[1:])
 
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0', 'Referer':'http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0',}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0', 'Referer':'https://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word=%E8%9C%A1%E7%AC%94%E5%B0%8F%E6%96%B0',}
 
 res = requests.get((url),headers = headers)
 res.raise_for_status()

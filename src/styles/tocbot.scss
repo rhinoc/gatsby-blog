@@ -91,6 +91,7 @@
             left: 1em;
             height: 1em;
             font-family: var(--font-mono);
+            letter-spacing: -.1em;
         }
 
         .toc-list {
@@ -99,7 +100,7 @@
 
             .toc-list-item {
                 position: relative;
-                margin-left: 2em;
+                margin-left: 1.65em;
 
                 a.toc-link {
                     display: block;

@@ -29,16 +29,16 @@ import webbrowser, requests, sys, bs4, re
 
 headers = {
         'Accept':'application/json, text/javascript, */*; q=0.01',
-        'Origin':'http://www.zimuzu.tv',
+        'Origin':'https://www.zimuzu.tv',
         'User-Agent':'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
         'Content-Type': 'application/x-www-form-urlencoded',
         }
 
 if len(sys.argv) < 2:
     keywords = input()
-    url = 'http://www.zimuzu.io/search?keyword='+ keywords +'&type=resource'
+    url = 'https://www.zimuzu.io/search?keyword='+ keywords +'&type=resource'
 else:
-    url = 'http://www.zimuzu.io/search?keyword='+' '.join(sys.argv[1:])+'&type=resource'
+    url = 'https://www.zimuzu.io/search?keyword='+' '.join(sys.argv[1:])+'&type=resource'
 
 res = requests.get((url),headers = headers)
 res.raise_for_status()
@@ -54,10 +54,10 @@ for piece in linkElems:
 cho = input()
 
 #print download urls
-dlUrl = 'http://www.zimuzu.io/resource/list/' + cho
+dlUrl = 'https://www.zimuzu.io/resource/list/' + cho
 username = ''
 password = ''
-loginurl = 'http://www.zimuzu.io/User/Login/ajaxLogin'
+loginurl = 'https://www.zimuzu.io/User/Login/ajaxLogin'
 data = "account=" + username + "&password="+ password + "&remember=1"
 session = requests.Session()
 login = session.post(loginurl,data = data,headers = headers)

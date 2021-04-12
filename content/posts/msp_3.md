@@ -184,7 +184,7 @@ P1OUT = BIT3;
 所以要先在Resource Explorer中下载对应的库函数（可能需要科学上网），如果在View下找不到Resource Explorer，可能是在Getting Started中将CCS设置为了Simple模式，取消即可。
 
 库函数路径如下图，先点击右上角第三个按钮Download and Install之后，再点击中间的按钮导入到IDE。  
-![](http://pic.rhinoc.top/2019-06-25-15614492128817.jpg)
+![](https://pic.rhinoc.top/2019-06-25-15614492128817.jpg)
 
 之后，就可以在新导入的空项目中愉快地玩耍了。  
 运用库函数编码会容易许多，因为函数的名字非常的easy。  
@@ -591,5 +591,5 @@ __interrupt void Port_2_Key(void)//中断函数
 ## 参考资料
 
 1.  [MSP430单片机GPIO编程入门教程](https://www.yiboard.com/thread-772-1-1.html)
-2.  [Hexadecimal and Binary Number System basics for Embedded Programming](http://www.ocfreaks.com/hexadecimal-and-binary-number-system-basics-for-embedded-programming/)
-3.  [Tutorial : Embedded programming basics in C – bitwise operations](http://www.ocfreaks.com/tutorial-embedded-programming-basics-in-c-bitwise-operations/)
+2.  [Hexadecimal and Binary Number System basics for Embedded Programming](https://www.ocfreaks.com/hexadecimal-and-binary-number-system-basics-for-embedded-programming/)
+3.  [Tutorial : Embedded programming basics in C – bitwise operations](https://www.ocfreaks.com/tutorial-embedded-programming-basics-in-c-bitwise-operations/)

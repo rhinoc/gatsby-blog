@@ -49,13 +49,13 @@ hexo d
 ## 配置一个Alfred Workflow
 
 在Alfred中以Keywords模版新建一个Workflow。  
-![](http://pic.rhinoc.top/15497690596669.jpg)
+![](https://pic.rhinoc.top/15497690596669.jpg)
 
 设置输入`hexo`时启动之前保存的`hexo.command`。
 
-![](http://pic.rhinoc.top/15497699954093.jpg)
+![](https://pic.rhinoc.top/15497699954093.jpg)
 
 启用这个Workflow就OK了。
 
-![](http://pic.rhinoc.top/15497698534260.jpg)  
-![](http://pic.rhinoc.top/15497700083064.jpg)
+![](https://pic.rhinoc.top/15497698534260.jpg)  
+![](https://pic.rhinoc.top/15497700083064.jpg)

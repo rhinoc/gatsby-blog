@@ -26,7 +26,7 @@
     --bg-light: url("../images/wrapped.svg"),
         #E3E6EC;
     /* Shadow */
-    --shadow-glass: rgba(0, 0, 0, 0.06) 0px 5px 30px;
+    --shadow-glass: rgba(0, 0, 0, .06) 0px 5px 30px;
 }
 
 @media (max-width:400px) {
@@ -42,7 +42,7 @@
     }
 
     50% {
-        transform: scale(0.9);
+        transform: scale(.9);
     }
 
     100% {
@@ -333,8 +333,9 @@ h6 {
             color: var(--color-heading);
 
             .search-icon {
-                opacity: 0.6;
+                opacity: .6;
                 height: 1em;
+                width: 1em;
                 cursor: pointer;
 
                 &:hover{
@@ -343,7 +344,7 @@ h6 {
             }
 
             a {
-                opacity: 0.6;
+                opacity: .6;
                 padding-top: 9px;
                 padding-bottom: 9px;
                 font-size: 12px;
@@ -441,6 +442,7 @@ h6 {
                 }
 
                 svg {
+                    width: 2rem;
                     height: 2rem;
                 }
             }

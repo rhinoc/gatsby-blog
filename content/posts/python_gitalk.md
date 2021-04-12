@@ -91,7 +91,7 @@ tags: ["python"]
 </div>
 
 那么再看看Gitalk初始化时自动生成的Issue：  
-![](http://pic.rhinoc.top/15497140095951.jpg)
+![](https://pic.rhinoc.top/15497140095951.jpg)
 
 在被这张图中，四个参数的值分别为：  
 

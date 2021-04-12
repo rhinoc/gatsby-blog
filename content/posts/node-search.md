@@ -117,7 +117,7 @@ exports.search = search;
 
 ## 使用
 
-在 Chrome 中修改默认搜索引擎为`http://127.0.0.1:8888/search?q=%s`即可。
+在 Chrome 中修改默认搜索引擎为`https://127.0.0.1:8888/search?q=%s`即可。
 
 的确，我们可以直接在根目录运行`node index.js`就能启动服务器，不过这样每次开机都要重复输入代码，还得忍受 Terminal 小黑窗一直开着。
 

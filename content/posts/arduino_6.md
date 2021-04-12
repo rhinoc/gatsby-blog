@@ -192,7 +192,7 @@ detachInterrupt(interrupt) //中断分离函数：中断编号
 
 ### 实验：外部中断按钮控制LED灯
 
-还是使用之前[Arduino基础（一）简单介绍与数字输入和判断](http://www.rhinoc.top/post/arduino_1.html)的线路。  
+还是使用之前[Arduino基础（一）简单介绍与数字输入和判断](https://www.rhinoc.top/post/arduino_1.html)的线路。  
 
 ```c
 int pbIn = 0;                  // 定义中断引脚为0，也就是D2引脚

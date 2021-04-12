@@ -8,9 +8,9 @@ tags: ["arduino"]
 
 参考资料：
 
-*   [HC-05與HC-06藍牙模組補充說明（三）：使用Arduino設定AT命令](http://swf.com.tw/?p=712)
+*   [HC-05與HC-06藍牙模組補充說明（三）：使用Arduino設定AT命令](https://swf.com.tw/?p=712)
 *   [HC-06蓝牙模块设置与使用](https://blog.csdn.net/xiaoping2994/article/details/53371659?locationNum=7&fps=1)
-*   [实操六蓝牙串口通讯——Android手机控制Arduino单片机](http://blog.sina.com.cn/s/blog_c1526256010301vz.html)
+*   [实操六蓝牙串口通讯——Android手机控制Arduino单片机](https://blog.sina.com.cn/s/blog_c1526256010301vz.html)
 *   [蓝牙（BT04A、HC-05) 使用经验](https://blog.csdn.net/m0_37575064/article/details/76419088)
 
 ### 硬件介绍

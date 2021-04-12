@@ -22,7 +22,7 @@ tags: ["msp430"]
 *   单片机 - 小轿车
 
 为了更系统的理解，我画了一张思维导图：  
-![](http://pic.rhinoc.top/15532246992542.jpg)
+![](https://pic.rhinoc.top/15532246992542.jpg)
 
 回到主角MSP430，TI在这个系列的产品主打特点就是“超低功耗”，功耗在uA级（相比之下，51单片机的功耗在mA级）。  
 除了MSP430F5529LP这块Launch Pad，学校还发了一个Hautsing Instruments针对前者的Pocket Kit。
@@ -46,7 +46,7 @@ screen /dev/cu.usbserial 9600
 ### 怎么看原理图
 
 以《MSP430F5529 Pocket Lab Schematic》中的按钮部分为例：  
-![](http://pic.rhinoc.top/15537795444813.jpg)  
+![](https://pic.rhinoc.top/15537795444813.jpg)  
 首先我们要明确目的——要从原理图中找什么？在实验三中，我们需要知道LED灯`L1`和按钮`S1`的<ruby>端口<rp></rp><rt>Port</rt></ruby>和<ruby>引脚<rp></rp><rt>Pin</rt></ruby>。（有关什么是端口和引脚，可以简单理解为一块板子上有多个端口，每个端口上有多个引脚）  
 这里以`S1`为例，从图上可以看到`S1`在`P1.2`上，也就是端口1上的引脚2的意思。
 
